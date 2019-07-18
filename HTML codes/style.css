@@ -1,0 +1,47 @@
+.myblack {
+    background-color: rgb(20, 19, 19);
+    color: white;
+}
+
+.logo {
+    /* justify-content: center; */
+    display: block;
+    margin: 0 auto;
+    padding-top: 150px;   
+}
+
+.searchbar {
+    border: #333 1px solid;
+    border-radius: 50px;
+    padding: 22px 15px;
+    /* margin: 0 auto; */
+}
+
+.searchdiv {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.buttonStyle {
+    margin-top: 20px; 
+    text-align: center;
+
+}
+
+.buttonStyle button {
+    border: solid #333 1px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.lucky_button {
+    margin-left: 10px;
+}
+
+.lang_text {
+    margin-top: 40px;
+    color: white;
+}
+

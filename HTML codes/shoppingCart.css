@@ -1,0 +1,53 @@
+.card_div {
+    display: block;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card1 {
+    margin-left: 20px;
+}
+
+.card2 {
+    margin-left: 20px;
+}
+
+.iphonepic {
+    margin-top: 40px;
+}
+
+.s10pic {
+    margin-top: 25px;
+}
+
+.cartArea {
+    background-color: #f8f9fade;
+}
+
+.cartPictext {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cartPictext1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.price {
+    font-size: 1rem;
+}
+
+.carousel {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.img1 {
+    max-height: 610px;
+}
+
+.removeBtn {
+    background-color: white;
+    border-radius: 50%;
+}

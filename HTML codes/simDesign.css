@@ -1,0 +1,45 @@
+.Main_Pic {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 70px;
+    padding-left: 160px;
+    margin-bottom: 20px;
+    margin: both;
+}
+.text {
+    margin: 0 auto;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Header1 {
+    border-bottom: 5px solid black;
+}
+
+.foot {
+    height: 40px;
+    margin: 20px;
+    ;
+}
+
+.p2 {
+    user-select: none;
+
+}
+
+.p3 {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.foot {
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}

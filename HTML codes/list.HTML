@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+    <div>
+        
+        <form action="#" id="form">
+            <input type="text" id="fname" placeholder="Enter Name" />
+            <input type="submit" id="btn" value="Submit" />
+        </form>
+    </div>
+
+    <!-- <h1>
+        My Friends are :
+    </h1> -->
+`
+    <div id="friendsTable"></div>
+
+    <label for="name">
+        Add Friends =>
+        <p id="display"></p>
+    </label>
+
+
+    <script>
+
+       
+
+        document.getElementById("form").addEventListener('submit', appendFunc);
+
+        function appendFunc(e) {
+            e.preventDefault()
+            let n = document.getElementById("fname").value;
+           let listshow =  document.getElementById('display')
+            let list = document.createElement('li')
+            list.innerHTML = n
+            listshow.appendChild(list)
+
+        }
+
+    </script>
+</body>
+
+</html>
+
