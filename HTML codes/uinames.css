@@ -1,0 +1,22 @@
+.Cards {
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.printArea{
+    justify-content: center;
+}
+
+.dropDown1 {
+    max-width: 200px;
+}
+
+.dropDown2 {
+    max-width: 200px;
+}
+
+.filters {
+    margin-left: 50px;
+    margin-top: 30px;
+    /* border: solid 1px black; */
+}

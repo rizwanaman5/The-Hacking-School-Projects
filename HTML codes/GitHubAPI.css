@@ -1,0 +1,13 @@
+.profile_photo {
+    max-width: 100px;
+}
+
+.container {
+    display: flex;
+    margin-left: 40px;  
+}
+
+.div2 {
+    margin-left: 40px; 
+}
+
