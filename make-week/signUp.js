@@ -16,7 +16,8 @@ router.post("/", (req, res) => {
     bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(password, salt, (err, hash) => {
             password = hash;
-            let text_data = { "name": name, "email": email, "password": password };
+            
+            let text_data = { "name": name, "email": email, "hash": password };
 
             mongo.connect(url, (err, client) => {
                 if (err) {
