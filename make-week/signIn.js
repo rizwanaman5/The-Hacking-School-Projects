@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
             console.log(err)
             return;
         }
-
+        
         const db = client.db('info');
         const collection = db.collection('userInfo');
 
