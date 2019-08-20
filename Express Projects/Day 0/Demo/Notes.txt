@@ -1,0 +1,17 @@
+Why do we need Express ?
+-> 
+
+Why do we do 'npm init' ?
+-> 
+
+What is package.Json ?
+->
+
+What is package-lock.json ?
+-> 
+
+How to grab a part from the URL ?
+-> use res.params.id
+
+Why do we need path ?
+-> 
