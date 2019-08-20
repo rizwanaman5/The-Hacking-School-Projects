@@ -15,27 +15,12 @@ const PORT = process.env.PORT || 5533;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-const products = ['apple', 'mango', 'banana', 'pear', 'coconut', 'pineapple']
 
 // Route *****************
-app.get('/', (req, res) => {
-    res.render('index', {products:products});
-    
-})
 
-app.post('/', (req,res) => {
-    // console.log(req.body);
-    products.push(req.body.prod);
-    res.redirect('/');
-})
-
-
-
-app.get('/home/:id', (req, res) => {
-    let user = req.params.id;
-    res.send(`hello ${user}`);
-})
-
+app.use('/', require('./Routes/index'));
+app.use('/jobs', require('./Routes/jobs'));
+app.use('/profile', require('./Routes/profile'));
 
 app.listen(PORT, () => {
     console.log(`server started at ${PORT}`);
