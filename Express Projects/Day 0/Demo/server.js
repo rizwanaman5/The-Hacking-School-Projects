@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5533;
 
 
 // View engine
