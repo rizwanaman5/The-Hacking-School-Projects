@@ -25,6 +25,8 @@ app.use('/jobs', require('./Routes/jobs'));
 app.use('/profile', require('./Routes/profile'));
 app.use('/tasks', require('./Routes/tasks'));
 app.use('/updateCard', require('./Routes/updateCard'));
+app.use('/users', require('./Routes/users'));
+app.use('/posts', require('./Routes/posts'))
 
 app.listen(PORT, () => {
     console.log(`server started at ${PORT}`);
