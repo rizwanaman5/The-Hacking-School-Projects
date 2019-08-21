@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    db.TASKS.find({_id: req.params.id})
+    db.TASKS.findOne({_id: req.params.id})
         // .then((data) => res.json(data))
         .then((data) => res.render('updateCard', { data: data }))
         .catch((err) => res.send(err))
