@@ -1,0 +1,21 @@
+<%- include ./partials/header %>
+
+<div class="container mt-3">
+<h3>Update Card</h3>
+<%= data.taskName%>
+<%=data%>
+
+<form action="/tasks/<%=data._id%>?_method=PUT" method="POST">
+
+    <input value="<%= data.taskName %>" name="taskName" placeholder="Name of Task" />
+    <input value="<%= data.description %>" name="description" placeholder="description" />
+    <input value="<%= data.dueDate %>" name="dueDate" placeholder="completion date" />
+    <button type="submit">submit</button>
+    
+</form>
+</div>
+
+
+
+
+<%- include ./partials/footer %>

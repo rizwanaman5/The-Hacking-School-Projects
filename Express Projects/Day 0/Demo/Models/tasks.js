@@ -6,7 +6,11 @@ const taskSchema = new mongoose.Schema({
         required: [true, "this is a required field"]
     },
     description: String,
-    dueDate: String
+    dueDate: String,
+    createdOn: {
+        type: Date,
+        default: Date.now()
+    }
 })
 
 const TASKS = mongoose.model('TASKS', taskSchema);

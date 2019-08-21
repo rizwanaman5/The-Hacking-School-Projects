@@ -1,0 +1,32 @@
+<%- include ./partials/header %>
+
+<div class="container mt-3 d-flex flex-row">
+  <div>
+    <form class="m-2" action="/tasks" method="POST">
+      <input name="taskName" placeholder="Name of Task" />
+      <input name="description" placeholder="description" />
+      <input name="dueDate" placeholder="completion date" />
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% for(let i = 0; i < data.length; i++) { %>
+    <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= data[i].taskName %></h5>
+        <p class="card-text">
+          <%= `Task Description : ${data[i].description}` %>
+        </p>
+        <p class="card-text">
+          <%= `Due Date : ${data[i].dueDate}` %>
+        </p>
+        <a href="/tasks/<%= data[i]._id%>" class="card-link">Edit</a>
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>
+<%- include ./partials/footer %>
