@@ -16,11 +16,12 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
-// Route *****************
+// Routes *****************
 
 app.use('/', require('./Routes/index'));
-app.use('/jobs', require('./Routes/jobs'));
+app.use('/jobs', require('./Routes/jobs')); 
 app.use('/profile', require('./Routes/profile'));
+// app.use('/tasks', require('./Routes/tasks'));
 
 app.listen(PORT, () => {
     console.log(`server started at ${PORT}`);
