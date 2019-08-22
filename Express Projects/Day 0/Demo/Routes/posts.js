@@ -12,6 +12,8 @@ router.get('/', (req, res) => {
 router.post('/:id', (req, res) => {
     db.Posts.create(req.body)
         .then(async(data) => {
+            console.log(data);
+            console.log(req.body)
             await db.User.findOneAndUpdate({_id: req.params.id}, 
                 {$push: {posts: data._id}});
             res.json(data)
