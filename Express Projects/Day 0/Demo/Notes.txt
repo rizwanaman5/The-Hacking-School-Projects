@@ -1,11 +1,41 @@
-Why do we need Express ?
--> 
+What is Node.JS ?
+A simple PHP web app would just collapse 
+if it had to face a large number of users. 
+
+What is Express JS ?
+-> Ever since the inception of JavaScript, web developers have regarded it strictly as a client side web language.
+That was untill the advent of Node.JS. Node.JS is powerful, it is flexible, and it is relatively easy to code. 
+But for those who wanted something less complicated, simpler, not as powerful but faster, the ExpressJS framework was invented.
+
+Express.JS is a fast, unopinionated and minimalist web framework for Node.JS. Lets explain those key-words.
+Fast means it has very high-performance. Unopinionated means that it is not a high-level framework, like Laravel or Django. It is very 
+basic at its core. And, it does not assume that you are going to build your application in any certain way or design pattern. You have
+full control over how you handle your request to the server and how you respond back. 
+
+Why do we need Express JS ?
+-> Express makes building web applications with Node.JS much easier. Technically, we can do with Node.JS everything that we use Express for.
+But doing even simple things with Node, like building a simple Web Server, is pretty complicated. Express makes handling requests very simple.
+Doing the same thing in Express requires much less code. Express has easy access to query strings, URls, and we can also easily parse incoming 
+data using body-parser.
+
+In addition we dont have to store all our routes in a single file. Express has a Router which we can use separate out the routes and clean
+up our application.
+
+Express is used for both, APIs that serve JSON data and for rendering pages on the server. It is extremely fast and gives a lot of freedom 
+of use. In addition, it is by far the most popular Node framework. 
+
+And another advantage of Express is that its all JavaScript. 
+
+What is Middleware ?
+-> Middleware functions are functions that have access to the request and response objects. Express has some build-in Middleware, but some also
+comes from 3rd party sources. One can imagine Middleware to be like a stack of functions that is executed when a request is made to the server. 
+
 
 Why do we do 'npm init' ?
 -> 
 
 What is package.Json ?
-->
+-> 
 
 What is package-lock.json ?
 -> 
@@ -15,3 +45,13 @@ How to grab a part from the URL ?
 
 Why do we need path ?
 -> 
+
+What does the Models folder do?
+-> 
+
+What do Routes do?
+-> Routing refers to determining how an application responds to a client request to a particular endpoint.
+
+Route definition takes the following structure:
+-> app.METHOD(PATH, HANDLER)
+
